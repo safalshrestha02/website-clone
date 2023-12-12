@@ -28,6 +28,7 @@ export default function Header() {
           <button className="btn-login">Login</button>
           <button className="btn-register">Register</button>
         </div>
+        <img className="banner-img" src="/public/hero-bg-trans.png" alt="" />
       </nav>
     </header>
   );

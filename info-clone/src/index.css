@@ -20,6 +20,7 @@
   padding-left: 32px;
   padding-right: 32px;
   align-items: center;
+  background-color: white;
 }
 
 .nav-bar-left {
@@ -78,13 +79,21 @@
   color: white;
 }
 
+.banner-img{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 /* Banner Section */
 
 .banner {
-  background-image: url(../public/hero-bg-trans.png);
-  /* background-position: center; */
+  /* background-image: url(../public/hero-bg-trans.png);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain; */
   text-align: center;
   padding-top: 4rem;
   top: 0;
@@ -138,12 +147,13 @@
 }
 
 .banner-items {
-  background-image: url(../public/hero-bg-lines.png);
+  /* background-image: url(../public/hero-bg-lines.png); */
   display: flex;
   flex-direction: column;
   width: 885px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4rem;
 }
 
 .banner-heading {
@@ -193,4 +203,332 @@
 .banner-btn-register svg {
   display: inline;
   vertical-align: middle;
+}
+
+.banner iframe {
+  height: 500px;
+  width: 896px;
+  padding-bottom: 6rem;
+}
+
+/* Feature Section */
+
+.feature {
+  margin-bottom: 8rem;
+}
+
+.feature-top {
+  text-align: center;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.5rem;
+}
+
+.feature-paragraph {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.feature-heading {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.feature-heading-span {
+  color: transparent;
+  background: linear-gradient(134deg, #9024ec, #5f0cf9);
+  -webkit-background-clip: text;
+}
+
+.feature-paragraph-2 {
+  color: rgb(75 85 99);
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.slider {
+  display: flex;
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: block; */
+  /* position: relative; */
+  /* z-index: 1; */
+  gap: 30px;
+}
+
+.slider p {
+  flex: 1 1 auto;
+  line-height: 1.75rem;
+  margin-top: 0.5rem;
+  color: rgb(75 85 99);
+}
+
+.slider h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.audio-notes {
+  min-height: 250px;
+  width: 286px;
+  /* margin-right: 24px; */
+  background-image: url(../public/carousel-pattern.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(251 245 248);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(255, 192, 223);
+}
+
+.audio-notes svg {
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel {
+  min-height: 250px;
+  width: 286px;
+  /* margin-right: 24px; */
+  background-image: url(../public/carousel-pattern.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(240, 230, 250);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(223, 196, 255);
+}
+
+.travel svg {
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gen {
+  min-height: 250px;
+  width: 286px;
+  /* margin-right: 24px; */
+  background-image: url(../public/carousel-pattern.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(243, 255, 230);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(208, 255, 158);
+}
+
+.image-gen svg {
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.writing {
+  min-height: 250px;
+  width: 286px;
+  /* margin-right: 24px; */
+  background-image: url(../public/carousel-pattern.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(253, 239, 231);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(255, 209, 183);
+}
+
+.writing svg {
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Advantages Section */
+
+.advantages {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-heading {
+  text-align: center;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-top-text {
+  font-weight: 700;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  display: block;
+}
+
+.advantages-heading h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.advantages-bot-text {
+  line-height: 1.75rem;
+  padding-bottom: 2rem;
+}
+
+.advantages-card {
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  margin-bottom: 3.5rem;
+}
+
+.advantages-card-left {
+  flex-basis: 66.666667%;
+}
+
+.multilingual {
+  display: flex;
+  /* flex-direction: row; */
+  padding-right: 0.25rem;
+  padding: 3rem;
+  background-color: rgb(243 248 254);
+  gap: 1.75rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgb(187, 218, 255);
+}
+
+.multilingual-text h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.multilingual-text p {
+  line-height: 1.75rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(75 85 99);
+}
+
+.multilingual img {
+  height: 140px;
+  width: 140px;
+  vertical-align: middle;
+  max-width: 467px;
+}
+
+.industry {
+  display: flex;
+  /* flex-direction: row; */
+  padding-right: 0.25rem;
+  padding: 3rem;
+  background-color: rgb(255 254 244);
+  gap: 1.75rem;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 1.5rem; */
+  border: 1px solid rgb(255, 250, 189);
+}
+
+.industry-text h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.industry-text p {
+  line-height: 1.75rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(75 85 99);
+}
+
+.industry img {
+  height: 140px;
+  width: 140px;
+  vertical-align: middle;
+  max-width: 467px;
+}
+
+.advantages-card {
+  display: flex;
+}
+
+.advantages-card-right {
+  flex-basis: 33.333333%;
+  /* height: 100%; */
+}
+
+.advantages-card-right-text {
+  background-color: rgb(251 252 250);
+  padding: 2rem;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.advantages-card-right img {
+  width: 225px;
+  height: 225px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  vertical-align: middle;
+}
+
+.advantages-card-right-text h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.advantages-card-right-text p {
+  font-weight: 500;
+  line-height: 1.75rem;
+  color: rgb(75 85 99);
+}
+
+.many-more {
+  text-align: center;
+}
+
+.many-more h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.many-more p {
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: rgb(75 85 99);
+  font-size: 1.25rem;
 }
