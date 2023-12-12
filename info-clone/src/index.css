@@ -1,5 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/* Header section */
+
 .nav-bar {
   display: flex;
-  max-width: 1280px;
-  gap: 20px;
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  align-items: center;
+}
+
+.nav-bar-left {
+  display: flex;
+  column-gap: 3rem;
+  align-items: center;
+}
+
+.nav-bar-logo {
+  width: auto;
+  height: 48px;
+}
+
+.list-item {
+  list-style: none;
+  display: inline;
+  padding: 20px;
+}
+
+.nav-bar-btn {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+#select-lang {
+  display: flex;
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 0.5px solid #e5e7eb;
+  width: 130px;
+  cursor: pointer;
+}
+
+.btn-login,
+.btn-register {
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 0.5px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.btn-register {
+  background-image: linear-gradient(134deg, #9024ec 0, #5f0cf9 100%);
+  color: white;
+}
+
+/* Banner Section */
+
+.banner {
+  background-image: url(../public/hero-bg-trans.png);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 4rem;
+  top: 0;
+}
+
+.banner-early-bird {
+  margin-bottom: 4rem;
+}
+
+.early-bird-para {
+  border: 0.5px solid #e5e7eb;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.early-bird-para p {
+  padding: 0.75rem;
+  line-height: 1.5rem;
+}
+
+.early-bird-text a {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-decoration: none;
+}
+
+.early-bird-text a span {
+  margin-right: 0.25rem;
+  font-weight: 600;
+  color: rgb(79 70 229);
+  text-decoration-line: underline;
+}
+
+.early-bird-text a svg {
+  display: inline;
+  vertical-align: middle;
+}
+
+.early-bird-span {
+  border-radius: 999px;
+  background-color: #fcd34d;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-right: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.banner-items {
+  background-image: url(../public/hero-bg-lines.png);
+  display: flex;
+  flex-direction: column;
+  width: 885px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-heading {
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+
+.banner-paragraph {
+  margin-top: 1.5rem;
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+}
+
+.banner-btn {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.banner-btn-register,
+.banner-btn-learn {
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 0.5px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.banner-btn-register {
+  background-image: linear-gradient(134deg, #9024ec 0, #5f0cf9 100%);
+  text-decoration: none;
+  color: white;
+  /* display: inline; */
+}
+
+.banner-btn-register span {
+  margin-right: 0.5rem;
+}
+
+.banner-btn-register svg {
+  display: inline;
+  vertical-align: middle;
 }

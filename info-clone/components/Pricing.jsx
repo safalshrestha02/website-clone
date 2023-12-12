@@ -24,7 +24,10 @@ export default function Pricing() {
             <div className="pricing-included">
               <p>What's included</p>
               <div className="included-items">
-                
+                <p>All infoGPT Features</p>
+                <p>Unlimited Requests, No Limits</p>
+                <p>GPT-4 Powered Assistant</p>
+                <p>Priority support</p>
               </div>
             </div>
           </div>
@@ -35,7 +38,9 @@ export default function Pricing() {
         <p>
           <span>$10</span> USD
         </p>
-        <button><img src="" alt="lock"></img>Unlock Unlimited Access</button>
+        <button>
+          <img src="" alt="lock"></img>Unlock Unlimited Access
+        </button>
       </div>
     </>
   );
