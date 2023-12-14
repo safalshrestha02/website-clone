@@ -6,6 +6,9 @@ import Feature from "../components/Feature";
 import Advantages from "../components/Advantages";
 import CtaBanner from "../components/CtaBanner";
 import Pricing from "../components/Pricing";
+import Testimonial from "../components/Testimonial";
+import GetStarted from "../components/GetStarted";
+import Footer from "../components/Footer";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -16,5 +19,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Advantages />
     <CtaBanner />
     <Pricing />
+    <Testimonial />
+    <GetStarted />
+    <Footer />
   </React.StrictMode>
 );
