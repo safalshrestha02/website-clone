@@ -67,10 +67,10 @@ export default function Banner() {
           <button className="banner-btn-learn">Learn More</button>
         </div>
       </div>
-      <iframe
+      {/* <iframe
         src="https://www.youtube.com/watch?v=6uEx_hsa1_0&ab_channel=BeeyondAI"
         frameborder="0"
-      ></iframe>
+      ></iframe> */}
     </div>
   );
 }

@@ -8,9 +8,14 @@
 
 /* Header section */
 
+/* header {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 .nav-bar {
-  display: flex;
   max-width: 78rem;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -87,6 +92,26 @@
   top: 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav-bar-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+}
+
 /* Banner Section */
 
 .banner {
@@ -150,7 +175,7 @@
   /* background-image: url(../public/hero-bg-lines.png); */
   display: flex;
   flex-direction: column;
-  width: 885px;
+  /* width: 885px; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4rem;
@@ -275,8 +300,8 @@
 }
 
 .audio-notes {
-  min-height: 250px;
-  width: 286px;
+  /* min-height: 250px; */
+  /* width: 286px; */
   /* margin-right: 24px; */
   background-image: url(../public/carousel-pattern.png);
   background-repeat: no-repeat;
@@ -297,8 +322,8 @@
 }
 
 .travel {
-  min-height: 250px;
-  width: 286px;
+  /* min-height: 250px; */
+  /* width: 286px; */
   /* margin-right: 24px; */
   background-image: url(../public/carousel-pattern.png);
   background-repeat: no-repeat;
@@ -319,8 +344,8 @@
 }
 
 .image-gen {
-  min-height: 250px;
-  width: 286px;
+  /* min-height: 250px; */
+  /* width: 286px; */
   /* margin-right: 24px; */
   background-image: url(../public/carousel-pattern.png);
   background-repeat: no-repeat;
@@ -341,8 +366,8 @@
 }
 
 .writing {
-  min-height: 250px;
-  width: 286px;
+  /* min-height: 250px; */
+  /* width: 286px; */
   /* margin-right: 24px; */
   background-image: url(../public/carousel-pattern.png);
   background-repeat: no-repeat;
@@ -360,6 +385,16 @@
   margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 2rem; */
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
 }
 
 /* Advantages Section */
@@ -382,7 +417,7 @@
   padding-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  display: block;
+  /* display: block; */
 }
 
 .advantages-heading h2 {
@@ -495,7 +530,7 @@
 .advantages-card-right img {
   width: 225px;
   height: 225px;
-  display: block;
+  /* display: block; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
@@ -534,6 +569,85 @@
   font-size: 1.25rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .advantages-card {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 2rem; */
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  /* .advantages-card-right-text {
+    display: flex;
+  } */
+
+  .advantages-card-right-text img {
+    float: right;
+    height: 140px;
+    width: 140px;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .multilingual {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .advantages-card {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 2rem; */
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  /* .advantages-card-right-text {
+    display: flex;
+  } */
+
+  .advantages-card-right-text img {
+    float: right;
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    vertical-align: middle;
+    /* visibility: hidden; */
+  }
+
+  .multilingual {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .advantages-card-right-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages-card-right-text img {
+    /* float: right; */
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    vertical-align: middle;
+    /* visibility: hidden; */
+  }
+
+  .multilingual {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .industry {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* CTA Banner Section */
 
 .cta-banner {
@@ -550,12 +664,13 @@
 
 .get-started {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
 .get-started-left {
-  grid-row: 1/2;
-  grid-column: 1/2;
+  /* grid-row: 1/2; */
+  /* grid-column: 1/2; */
   padding: 5rem;
 }
 
@@ -596,31 +711,49 @@
 }
 
 .get-started-right {
+  position: relative;
+  margin-top: 2rem;
   grid-column: 2/3;
   grid-row: 1/2;
 }
 
 .get-started-right img {
-  max-width: 768px;
-  border-top-right-radius: 0.75rem;
+  max-width: 100%;
+  border-top-left-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
-  /* position: relative; */
+  position: absolute;
   height: 100%;
   /* width: 100%; */
   /* top: 0; */
   /* right: 0; */
   /* bottom: 0; */
   /* left: 0; */
+  overflow: hidden;
   object-position: left top;
   object-fit: cover;
 }
 
 .cta-banner-lower-text {
-  width: 70%;
+  /* width: 50%; */
   line-height: 1.5rem;
   font-size: 0.75rem;
-  text-align: center;
+  /* text-align: center; */
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .get-started {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* row-gap: 2rem; */
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  .get-started-right {
+    visibility: hidden;
+  }
 }
 
 /* Pricing Section */
@@ -646,7 +779,7 @@
   padding-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  display: block;
+  /* display: block; */
 }
 
 .pricing-heading h2 {
@@ -804,11 +937,18 @@
   vertical-align: middle;
 }
 
+@media only screen and (max-width: 768px) {
+  .pricing-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* Testimonial Section */
 
 .testimonial {
   background-color: #f1edfd;
-  display: block;
+  /* display: block; */
   padding-top: 8rem;
   padding-bottom: 8rem;
   margin-bottom: 8rem;
@@ -895,6 +1035,20 @@
   font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+  .testimonial-card-section-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-card-section-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 /* Get Started Section */
 
 .ready {
@@ -903,15 +1057,16 @@
   padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-.ready-section {
   background-image: url(../public/banner-background.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
+  border-radius: 1rem;
   padding: 8rem 1.5rem 8rem 1.5rem;
 }
+
+/* .ready-section {
+} */
 
 .ready-texts {
   text-align: center;
@@ -1009,4 +1164,13 @@
   line-height: 1.25rem;
   font-size: 0.75rem;
   color: rgb(75 85 99);
+}
+
+@media only screen and (max-width: 768px) {
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
 }
