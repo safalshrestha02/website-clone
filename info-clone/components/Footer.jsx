@@ -1,4 +1,7 @@
+// import { Component } from "react";
+
 export default function Footer() {
+  // const { items } = this.props;
   return (
     <div className="footer">
       <img src="/beeyondai.png" alt="" className="beeyond" />

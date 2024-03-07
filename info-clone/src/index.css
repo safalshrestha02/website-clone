@@ -8,11 +8,6 @@
 
 /* Header section */
 
-/* header {
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .nav-bar {
   max-width: 78rem;
   display: flex;
@@ -97,28 +92,20 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    /* margin-left: auto;
-    margin-right: auto; */
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 534px) {
   .nav-bar-left {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    /* margin-left: auto;
-    margin-right: auto; */
   }
 }
 
 /* Banner Section */
 
 .banner {
-  /* background-image: url(../public/hero-bg-trans.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; */
   text-align: center;
   padding-top: 4rem;
   top: 0;
@@ -172,10 +159,8 @@
 }
 
 .banner-items {
-  /* background-image: url(../public/hero-bg-lines.png); */
   display: flex;
   flex-direction: column;
-  /* width: 885px; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4rem;
@@ -184,12 +169,14 @@
 .banner-heading {
   font-size: 3.75rem;
   font-weight: 700;
+  padding: 1rem;
 }
 
 .banner-paragraph {
   margin-top: 1.5rem;
   line-height: 1.75rem;
   font-size: 1.125rem;
+  padding: 1rem;
 }
 
 .banner-btn {
@@ -218,7 +205,6 @@
   background-image: linear-gradient(134deg, #9024ec 0, #5f0cf9 100%);
   text-decoration: none;
   color: white;
-  /* display: inline; */
 }
 
 .banner-btn-register span {
@@ -234,6 +220,12 @@
   height: 500px;
   width: 896px;
   padding-bottom: 6rem;
+}
+
+@media only screen and (max-width: 534px) {
+  .early-bird-span {
+    display: none;
+  }
 }
 
 /* Feature Section */
@@ -281,10 +273,24 @@
   max-width: 78rem;
   margin-left: auto;
   margin-right: auto;
-  /* display: block; */
-  /* position: relative; */
-  /* z-index: 1; */
   gap: 30px;
+  padding: 2rem;
+}
+
+.slider-box {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  /* overflow: scroll; */
+}
+
+.main-slider {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-slider div {
+  width: 250px;
 }
 
 .slider p {
@@ -300,9 +306,6 @@
 }
 
 .audio-notes {
-  /* min-height: 250px; */
-  /* width: 286px; */
-  /* margin-right: 24px; */
   background-image: url(../public/carousel-pattern.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -322,9 +325,6 @@
 }
 
 .travel {
-  /* min-height: 250px; */
-  /* width: 286px; */
-  /* margin-right: 24px; */
   background-image: url(../public/carousel-pattern.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -344,9 +344,6 @@
 }
 
 .image-gen {
-  /* min-height: 250px; */
-  /* width: 286px; */
-  /* margin-right: 24px; */
   background-image: url(../public/carousel-pattern.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -366,9 +363,6 @@
 }
 
 .writing {
-  /* min-height: 250px; */
-  /* width: 286px; */
-  /* margin-right: 24px; */
   background-image: url(../public/carousel-pattern.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -387,13 +381,10 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 894px) {
   .slider {
     display: flex;
     flex-direction: column;
-    /* row-gap: 2rem; */
-    /* margin-left: auto;
-    margin-right: auto; */
   }
 }
 
@@ -417,7 +408,6 @@
   padding-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  /* display: block; */
 }
 
 .advantages-heading h2 {
@@ -425,19 +415,23 @@
   line-height: 1;
   font-weight: 700;
   margin-bottom: 1rem;
+  padding: 2rem;
 }
 
 .advantages-bot-text {
   line-height: 1.75rem;
   padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .advantages-card {
   gap: 1.5rem;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   margin-bottom: 3.5rem;
+  padding: 1rem;
 }
 
 .advantages-card-left {
@@ -446,7 +440,6 @@
 
 .multilingual {
   display: flex;
-  /* flex-direction: row; */
   padding-right: 0.25rem;
   padding: 3rem;
   background-color: rgb(243 248 254);
@@ -480,14 +473,12 @@
 
 .industry {
   display: flex;
-  /* flex-direction: row; */
   padding-right: 0.25rem;
   padding: 3rem;
   background-color: rgb(255 254 244);
   gap: 1.75rem;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 1.5rem; */
   border: 1px solid rgb(255, 250, 189);
 }
 
@@ -518,7 +509,6 @@
 
 .advantages-card-right {
   flex-basis: 33.333333%;
-  /* height: 100%; */
 }
 
 .advantages-card-right-text {
@@ -530,7 +520,6 @@
 .advantages-card-right img {
   width: 225px;
   height: 225px;
-  /* display: block; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
@@ -569,18 +558,11 @@
   font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .advantages-card {
     display: flex;
     flex-direction: column;
-    /* row-gap: 2rem; */
-    /* margin-left: auto;
-    margin-right: auto; */
   }
-
-  /* .advantages-card-right-text {
-    display: flex;
-  } */
 
   .advantages-card-right-text img {
     float: right;
@@ -599,14 +581,7 @@
   .advantages-card {
     display: flex;
     flex-direction: column;
-    /* row-gap: 2rem; */
-    /* margin-left: auto;
-    margin-right: auto; */
   }
-
-  /* .advantages-card-right-text {
-    display: flex;
-  } */
 
   .advantages-card-right-text img {
     float: right;
@@ -614,7 +589,6 @@
     width: 140px;
     text-align: center;
     vertical-align: middle;
-    /* visibility: hidden; */
   }
 
   .multilingual {
@@ -622,19 +596,17 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 564px) {
   .advantages-card-right-text {
     display: flex;
     flex-direction: column;
   }
 
   .advantages-card-right-text img {
-    /* float: right; */
     height: 140px;
     width: 140px;
     text-align: center;
     vertical-align: middle;
-    /* visibility: hidden; */
   }
 
   .multilingual {
@@ -669,8 +641,6 @@
 }
 
 .get-started-left {
-  /* grid-row: 1/2; */
-  /* grid-column: 1/2; */
   padding: 5rem;
 }
 
@@ -706,10 +676,6 @@
   line-height: 1.5rem;
 }
 
-.cta-banner-btn svg {
-  /* vertical-align: middle; */
-}
-
 .get-started-right {
   position: relative;
   margin-top: 2rem;
@@ -723,36 +689,26 @@
   border-bottom-right-radius: 0.75rem;
   position: absolute;
   height: 100%;
-  /* width: 100%; */
-  /* top: 0; */
-  /* right: 0; */
-  /* bottom: 0; */
-  /* left: 0; */
   overflow: hidden;
   object-position: left top;
   object-fit: cover;
 }
 
 .cta-banner-lower-text {
-  /* width: 50%; */
   line-height: 1.5rem;
   font-size: 0.75rem;
-  /* text-align: center; */
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .get-started {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* row-gap: 2rem; */
-    /* margin-left: auto;
-    margin-right: auto; */
   }
 
   .get-started-right {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -779,7 +735,6 @@
   padding-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  /* display: block; */
 }
 
 .pricing-heading h2 {
@@ -800,7 +755,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 3.5rem;
-  /* max-width: 1280px; */
   border: 1px solid #e5e7eb;
   border-radius: 1.5rem;
 }
@@ -828,7 +782,6 @@
 
 .included-items {
   display: flex;
-  /* flex-direction: column; */
 }
 
 .pricing-included h3 {
@@ -873,7 +826,6 @@
   border-radius: 1rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  /* width: 500px; */
   flex-grow: 1;
 }
 
@@ -942,13 +894,23 @@
     display: flex;
     flex-direction: column;
   }
+
+  .pricing {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .included-items {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Testimonial Section */
 
 .testimonial {
   background-color: #f1edfd;
-  /* display: block; */
   padding-top: 8rem;
   padding-bottom: 8rem;
   margin-bottom: 8rem;
@@ -1000,7 +962,6 @@
 
 .testimonial-card-section {
   display: flex;
-  /* display: inline-block; */
   flex-direction: column;
   gap: 2rem;
 }
@@ -1064,9 +1025,6 @@
   border-radius: 1rem;
   padding: 8rem 1.5rem 8rem 1.5rem;
 }
-
-/* .ready-section {
-} */
 
 .ready-texts {
   text-align: center;

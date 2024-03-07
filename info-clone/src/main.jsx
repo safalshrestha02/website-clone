@@ -9,10 +9,12 @@ import Pricing from "../components/Pricing";
 import Testimonial from "../components/Testimonial";
 import GetStarted from "../components/GetStarted";
 import Footer from "../components/Footer";
+// import NavBar from "../components/NavBar";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    {/* <NavBar /> */}
     <Header />
     <Banner />
     <Feature />
